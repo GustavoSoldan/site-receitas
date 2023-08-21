@@ -1,13 +1,18 @@
 import {Link} from 'react-router-dom';
+import Style from '../../assets/style.css';
+import React, { useEffect, useState } from 'react';
+import Api from '../../services/api';
+import Header from '../../Components/Header/'
 
 function Home(){
     return(
-        <div>
-            <h1>Master Chef!</h1>
+        <>
+            <Header/>
+            
+            <Api/>
+        </>
 
-            <Link to="/recipes">Recipes</Link>
-            <Link to="/addnewrecipe">Add a New Recipe</Link>
-        </div>
+
 
     );
 
